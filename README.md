@@ -2,7 +2,7 @@
 
 # Diabetes Prediction Website
 
-Our project is a web application that uses a machine learning model to predict whether a person has diabetes or not based on their health metrics. We built the web application using Flask as the backend and HTML, CSS, and JavaScript as the frontend.
+Our  graduation project is a web application that uses a machine learning model to predict whether a person has diabetes or not based on their health metrics. We built the web application using Flask as the backend and HTML, CSS, and JavaScript as the frontend.
 Features
 
 The web application has the following features:
