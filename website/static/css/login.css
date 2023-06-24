@@ -1,0 +1,124 @@
+/* start form */
+
+body{
+  background-image: url("../seamless-background-medical-items_1284-3691.webp");
+  background-position: inherit;
+  background-size: contain;
+
+}
+.containerLogin{
+max-width: 661px;
+margin: 50px auto;
+height: 445px;
+border-radius: 24px;
+padding: 10px 10px 20px 10px;
+background-color: white;
+text-align: center;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.login-icon{
+  width: 66px;
+  height: 54px;
+  margin-top: 0%;
+  margin-bottom: -1%;
+  padding-top: 2%;
+  margin-left: 71%;
+}
+
+.blob {
+  width: 330.5px;
+  height: 444.5px;
+  margin: 0;
+  margin-left: -10px;
+  margin-top: -10px;
+  padding: 0;
+  float: left;
+  border-radius: 24px;
+
+}
+
+
+main{
+
+}
+
+::placeholder{
+  color:grey;
+  font-family: Arial, Helvetica, sans-serif ;
+
+}
+
+input[type="email"]
+,  input[type="password"] ,
+input[type="text"] {
+  background-color: #dedede;
+  width: 250px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height:44px;
+    font-size:14pt;
+  }
+form{
+  float:right;
+  margin-top: 8%;
+}
+input[type="submit"] {
+  text-align: center;
+background-color: #B21F1F;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif ;
+  font-style: italic;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 14px;
+  width: 210px;
+  cursor: pointer;
+  
+}
+
+
+/* Mobile styles */
+@media (max-width: 992px) {
+  .containerLogin {
+    padding: 20px;
+    height: 445px;
+    margin-top: 264px;
+  }
+  .login-blob{
+    width: 664.5px;
+    height: 646.5px;
+    border-radius: 18px;
+    padding-left: -14%;
+    padding-right: -2%;
+    margin-left: -3%;
+    padding-top: -16%;
+    margin-top: -3%;
+}
+  .Login {
+    font-size: 24px;
+    padding-top: 10%;
+  }
+  .login-icon{
+    margin-bottom: 5%;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  input[type="text"],
+   input[type="email"],
+    input[type="password"]{
+      background-color: #dedede;
+      width: 195px;
+      padding: 5px;
+      border-radius: 7px;
+      border: 1px solid #ccc;
+      height:20px;
+        font-size:14pt;
+        box-shadow: 1px 1px #dedede;
+}
+}

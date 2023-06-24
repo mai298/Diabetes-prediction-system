@@ -1,0 +1,491 @@
+
+body{
+  background-image: url("../1702.m10.i304.n006.F.c06.274170314\ Healthy\ fruit\ hand\ drawn\ seamless\ vector\ texture.jpg");
+  background-size: contain;
+}
+
+.choices{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 6%;
+  padding-top: 6%;
+}
+
+.child{
+flex-shrink: 1;
+
+}
+
+/* first choice*/
+
+.breakfast{
+  float: right;
+width:  812px;
+height: 239px;
+margin: auto;
+margin-top: -110px;
+margin-right: 0;
+}
+
+#btn{
+  float: left;
+  text-align: start;
+  margin-right: -160px;
+  margin-left: -15%;
+  margin-top: 1%;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: #B21F1F;  
+  padding: 20px; 
+  width: 750px;
+  height: 85px;  
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bolder;
+  color:beige;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+#btn:hover {
+  background-color:black;
+}
+.bf-card {
+  position: fixed;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 90%;
+background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    z-index: 9999;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+}
+.overlay.active {
+  opacity: 1;
+  pointer-events:visibleFill;
+}
+.card-body {
+  padding: 10px;
+  margin-left: 2%;
+}
+.card-title {
+  margin-top: 0rem;
+  font-family: "Kalam", cursive;
+  font-weight: normal;
+  font-size: 2rem;
+  color:#B21F1F;
+  text-align: center;
+}
+#closeButton ,#DcloseButton ,#LcloseButton,#PrecloseButton{
+  appearance: button;
+  backface-visibility: hidden;
+background-color: #B21F1F;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  margin-top: -8px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+} 
+.card-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.card-title2{
+  font-family: "Kalam", cursive;
+  font-size: 25px;
+  color: #B21F1F;
+}
+
+.card-title3{
+  font-family: "Kalam", cursive;
+  font-size: 25px;
+  color: #B21F1F;
+
+}
+.image-one {
+  width: 200px;
+  margin-left: 590px;
+  margin-top: -18%;
+  height: 200px;
+}
+/*end first choice*/
+
+/*second choice*/
+
+.lunch{
+  float: left;
+  width: 812px;
+  height: 214px;
+margin-top: -180px;
+margin-left: -406px;
+margin-right: 306px;
+}
+
+#lunch-btn{
+  float: left;
+  text-align: end;
+  margin-right: -160px;
+  margin-left: 3%;
+  margin-top: 8%;
+  border-radius: 25px;
+  background-color:#B21F1F;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  padding: 20px; 
+  width: 750px;
+  height: 85px;  
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bolder;
+  color:beige;
+  cursor: pointer;
+  touch-action: manipulation;
+
+}
+#lunch-btn:hover {
+  background-color: black;
+}
+
+.l-card{
+  margin-top: -1%;
+  position: fixed;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 90%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    z-index: 9999;
+}
+.lunch-body{
+  padding: 20px;
+}
+
+
+.lunch-title{
+  margin-top: -4%;
+  font-family: "Kalam", cursive;
+  font-weight: normal;
+  font-size: 2rem;
+  color:#B21F1F;
+  text-align: center;
+}
+.lunch-text{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.lunch-title2{
+  font-family: "Kalam", cursive;
+  font-size: 25px;
+  color: #B21F1F;
+}
+.lunch-title3{
+  font-family: "Kalam", cursive;
+  font-size: 25px;
+  color:#B21F1F;
+}
+
+.Loverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+}
+.Loverlay.active {
+  opacity: 1;
+  pointer-events:visibleFill;
+}
+
+.lunch .image-two {
+  margin-top: 0%;
+  margin-left: -608px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+/*end second choice*/
+/* third choice*/
+
+.dinner{
+    float: right;
+width:  812px;
+height: 239px;
+margin: auto;
+margin-right: 0;
+margin-bottom: 99px;
+margin-top: -50px;
+}
+#dinner-btn{
+  float: left;
+  text-align: start;
+  margin-right: -160px;
+  margin-left: -13%;
+  margin-top: 1%;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: #B21F1F;
+  padding: 20px; 
+  width: 750px;
+  height: 85px;  
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bolder;
+  color:beige;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+#dinner-btn:hover {
+  background-color: black;
+}
+
+.Dcard{
+  margin-top: -1%;
+  position: fixed;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 90%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    z-index: 9999;
+}
+.dinner-body{
+  padding: 20px;
+}
+.dinner-title{
+  margin-top: -4%;
+  font-family: "Kalam", cursive;
+  font-weight: normal;
+  font-size: 2rem;
+  color:#B21F1F;
+  text-align: center;
+}
+.dinner-text{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.dinner-title2{
+  font-family: "Kalam", cursive;
+  font-size: 25px;
+  color:#B21F1F;
+}
+.dinner-title3{
+  font-family: "Kalam", cursive;
+  font-size: 25px;
+  color:#B21F1F;
+}
+
+.Doverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+}
+.Doverlay.active {
+  opacity: 1;
+  pointer-events:visibleFill;
+}
+.dinner .image-three {
+  width: 200px;
+  margin-left: 590px;
+  margin-top: -18%;
+  height: 200px;
+}
+/*end third choice*/
+
+/*forth choice*/
+.Precautions{
+  float: left;
+width: 812px;
+height: 250px;
+margin-top: -253px;
+margin-left: -406px;
+margin-right: 306px;
+
+}
+
+#pre-btn{
+  float: left;
+  text-align: end;
+  margin-right: -160px;
+  margin-left: 3%;
+  margin-top: 5%;
+  border-radius: 25px;
+  background-color:#B21F1F;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  padding: 20px; 
+  width: 750px;
+  height: 85px;  
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bolder;
+  color:beige;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+#pre-btn:hover {
+  background-color: black;
+}
+.pcard{
+  margin-top: -1%;
+  position: fixed;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 90%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    z-index: 9999;
+}
+
+.pre-body{
+  padding: 20px;
+}
+
+
+.pre-title{
+  margin-top: -4%;
+  font-family: "Kalam", cursive;
+  font-weight: normal;
+  font-size: 2rem;
+  color:#B21F1F;
+  text-align: center;
+}
+.pre-text{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.Poverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+}
+.Poverlay.active {
+  opacity: 1;
+  pointer-events:visibleFill;
+}
+
+
+
+.Precautions .image-four {
+margin-top: 0%;
+  margin-left: -608px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+/*end forth choice*/
+
+
+@media(max-width: 992px){
+
+  .choices{
+    margin-top: 23%;
+  }
+  #btn{
+    width: 630px;
+    margin-left: 11%;
+  }
+
+  #dinner-btn{
+    width: 630px;
+    margin-left: 11%;
+  }
+  #lunch-btn{
+    margin-right: -123px;
+margin-left: 47%;
+width: 630px;
+  }
+
+  #pre-btn{
+    margin-right: -123px;
+    margin-left: 47%;
+    width: 630px;
+  }
+}

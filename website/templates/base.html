@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../static/cardiogram.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+   integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='css/main.css')}}" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/51a791caa3.js" crossorigin="anonymous"></script>
+
+  {% if custom_css%}
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/' +custom_css+'.css')}}">
+  {% endif %}
+
+  <title>{% block title %}Home{% endblock %}</title>
+
+</head>
+
+<body>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+  {% for category, message in messages %}
+  {% if category == 'error' %}
+
+  <div id="flash" class="alert alert-danger alert-dismissible fade show" role="alert" style="background-color: #FFEBE9;height:30px;">
+    {% else %}
+    <div class="alert alert-success alert-dismissible fade show" role="alert"
+      style="background-color: #DDF4FF; height:30px;">
+      {% endif %}
+      {{ message }}
+      <button type="button" class="close flash-close" data-dismiss="alert" aria-label="Close" style="
+            float: right;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  opacity: 0.2;
+  text-shadow: none;
+  padding: 0;
+  margin-right: 19px;
+  cursor: pointer;
+  border: none;">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    {% endfor %}
+    <script>
+      document.querySelectorAll('.flash-close').forEach(function (button) {
+        button.addEventListener('click', function () {
+          this.parentElement.remove();
+        });
+      });
+    </script>
+    {% endif %}
+    {% endwith %}
+
+
+  <div class="container">
+    
+  <header class=" child site-header">
+    <div class="logo">
+      <img src="../static/1000210173-removebg-preview.png" alt="logo" >
+    </div>    
+    <nav class=" child site-nav">
+      
+<ul>
+        {% if user.is_authenticated %}
+        <li><a href="/" class="home" style="color: black; ">Home</a></li>
+        <li><a href="/form" style="color: black;">Check Diabetes</a></li>
+        <li><a href="/doctors" style="color: black;">Doctors</a></li>
+        <li><a href="/dietandprecautions" style="color: black;">Diet</a></li>
+      </ul>
+
+        <button class="logout-button"><a href="/logout">Logout</a></button>
+      
+        {% else %}
+        <button class="reg" style="margin-right: -376%;"><a href="/signup" style="text-align: center;">SignUp</a></button>
+        <button class="reg" style="margin-right: -430%;"><a href="/login"  style="text-align: center;">Login</a></button>
+        {% endif %}
+      
+      
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars fa-sm"></i>
+      </div>
+
+        <div class="dropdown_menu">
+          <ul>
+
+            <li><a href="/">Home</a></li>
+    
+            {% if user.is_authenticated %}
+            <li><a href="/form">Check Diabetes</a></li>
+            <li><a href="/doctors">Doctors</a></li>
+            <br>
+            <li><a href="/dietandprecautions">Diet</a></li>
+            <br>
+            <li><a href="/logout">Logout</a></li>
+            {% else %}
+            <br>
+            <li><a href="/helpuser">HELP</a></li>
+            <br>
+            <li><a href="/signup">Sign Up</a></li>
+            <br>
+            <li><a href="/login">Login</a></li>
+            {% endif %}
+          </ul>
+        </div>
+    </nav>
+  </header>
+     
+
+
+
+  <main class=" child site-main"> 
+
+    {% block content %}
+    {% endblock %}
+
+  </main>
+  
+  <footer class=" child site-footer">
+<p id="para-footer">©2023 Diabetes Prediction. All Rights Reserved</p>
+
+<button id="scroll-up-btn" title="Back to top">
+  <i class="fa fa-arrow-up" style="color: white;"></i>
+</button>
+</footer>
+
+</div>
+<script src="{{url_for('static' ,filename='js/nav.js')}}"></script>
+</body>
+
+</html>

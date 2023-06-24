@@ -1,0 +1,164 @@
+/* start form */
+
+body{
+  background-image: url("../seamless-background-medical-items_1284-3691.webp");
+  background-position: inherit;
+  background-size: contain;
+
+
+}
+
+.signup-container {
+  width: 906px;
+  margin: 50px auto;
+  height: 511px;
+  border-radius: 24px;
+  padding: 10px 10px 20px 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+
+.blob {
+  width: 330.5px;
+  height: 508.5px;
+  margin: 0;
+  margin-left: -10px;
+  margin-top: -10px;
+  padding: 0;
+  float: left;
+  border-radius: 24px;
+
+}
+
+
+::placeholder {
+  color:grey;
+  font-family: Arial, Helvetica, sans-serif ;
+
+}
+
+form{
+  margin-top: 8%;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  background-color: #dedede;
+  width: 255px;
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  height:44px;
+    font-size:14pt;
+    box-shadow: 1px 1px #dedede;
+}
+#lastname{
+  float: right;
+    margin-top: -19%;
+    margin-right: -32%;
+}
+#password1{
+  float: right;
+    margin-top: -19%;
+    margin-right: -32%;
+}
+#city{
+  float: right;
+    margin-top: -19%;
+    margin-right: -31%;
+}
+#phonenumber{
+  float: right;
+    margin-top: -18%;
+    margin-right: -32%;
+}
+
+ .custom-select{
+  width: 120px;
+  height: 30px;
+  border: 1px solid #999;
+  font-size: 18px;
+  color:grey;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 1px 1px #ccc;
+}
+
+input[type="submit"] {
+  background-color:#B21F1F;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif ;
+  font-style: italic;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.welcome-para{
+  margin-left: 62%;
+  font-size: x-large;
+  font-style: oblique;
+  margin-bottom: -4%;
+  margin-top: 2%;
+  margin-right: -15%;
+}
+
+/* tablet styles */
+@media (max-width: 992px) {
+
+  .signup-container {
+    padding: 20px;
+    height: 512px;
+    margin-top: 264px;
+    width: 783px;
+
+  }
+  .welcome-para{
+    margin-left: 62%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    margin-right: -15%;
+  }
+
+  #lastname{
+    margin-top: -13%;
+  }
+  #password1{
+    margin-top: -13%;
+  }
+  #city{
+    margin-top: -13%;
+  }
+  #phonenumber{
+    margin-top: -13%;
+  }
+  .signUp {
+    font-size: 24px;
+    padding-top: 10%;
+  }
+  .signup-blob{
+    margin-left: -3%;
+margin-top: -3%;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  input[type="text"],
+   input[type="email"],
+    input[type="password"],
+     select {
+      background-color: #dedede;
+      width: 195px;
+      padding: 5px;
+      border-radius: 7px;
+      border: 1px solid #ccc;
+      height:20px;
+        font-size:14pt;
+        box-shadow: 1px 1px #dedede;
+}
+}
